@@ -11,15 +11,22 @@
 </div>
 </header>
 
+<h2 class="h2-title-responsive">Sites responsivos</h2>
+
 <article class="responsive">
 <div class="responsive-imgs">
-<img class="img-responsive" src="/imagens/header.jpg" alt="" height="300px">
-<img class="img-responsive" src="/imagens/header.jpg" alt="" height="300px">
+<img class="img-responsive" src="/imagens/header.jpg" alt="" >
+<img class="img-responsive" src="/imagens/header.jpg" alt="" >
 </div>
 <div class="responsive-imgs">
-<img class="img-responsive" src="/imagens/header.jpg" alt="" height="300px">
-<img class="img-responsive" src="/imagens/header.jpg" alt="" height="300px">
+<img class="img-responsive" src="/imagens/header.jpg" alt="" >
+<img class="img-responsive" src="/imagens/header.jpg" alt="" >
 </div>
+</article>
+
+<article class="img-dinamic">
+    <img src="/imagens/header.jpg" alt="">
+    <h1>sites dinamicos</h1>
 </article>
 
 <footer>

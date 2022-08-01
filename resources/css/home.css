@@ -1,35 +1,12 @@
+/* header */
+
 header {
     height: 100%;
     display: flex;
+    justify-content: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url("/imagens/header.jpg");
-}
-
-.responsive {
-    margin-top: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    position: relative;
-}
-
-.responsive-imgs {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 1rem;
-    position: relative;
-}
-
-.img-responsive {
-    transition: all 0.4s;
-}
-
-.img-responsive:hover {
-    opacity: 80%;
 }
 
 .h1-header {
@@ -72,4 +49,89 @@ header {
 
 .block-header:hover {
     background-color: rgba(255, 255, 255, 0.671);
+}
+
+
+/* header */
+
+
+/* responsive */
+
+.responsive {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
+    padding: 2rem 10rem;
+}
+
+.responsive-imgs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+}
+
+.img-responsive {
+    transition: all 0.4s;
+    max-width: 100%;
+}
+
+.img-responsive:hover {
+    opacity: 80%;
+}
+
+.h2-title-responsive {
+    text-align: center;
+    margin: 1rem;
+}
+
+
+/* responsive */
+
+
+/* img-dinamic */
+
+.img-dinamic {
+    display: flex;
+    position: relative;
+}
+
+.img-dinamic img {
+    width: 100%;
+    align-self: center;
+}
+
+.img-dinamic h1 {
+    text-align: center;
+    align-self: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 100px;
+}
+
+
+/* img-dinamic */
+
+@media (min-width: 300px) and (max-width: 578px) {
+    .responsive {
+        padding: 10px;
+        flex-direction: column;
+    }
+    .img-dinamic h1 {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 578px) and (max-width: 768px) {
+    .responsive {
+        padding: 2rem 2rem;
+    }
 }
