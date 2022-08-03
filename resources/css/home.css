@@ -120,7 +120,42 @@ header {
 
 /* img-dinamic */
 
+
+/* footer */
+
+footer {
+    background-image: url("/imagens/header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+footer h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* footer */
+
 @media (min-width: 300px) and (max-width: 578px) {
+    .h1-header {
+        font-size: 20px;
+    }
+    .h2-blocks-header {
+        display: none;
+    }
     .responsive {
         padding: 10px;
         flex-direction: column;

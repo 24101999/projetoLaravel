@@ -30,7 +30,11 @@
 </article>
 
 <footer>
-    
+    <h2>Henrique da silva costa</h2>
+    <h2>Full stack</h2>
+    <h2>PHP/Laravel/javascript</h2>
+    <a href="https://github.com/24101999" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/henrique-da-silva-costa-7172521a2/" target="_blank">Linkedin</a>
 </footer>
 
 

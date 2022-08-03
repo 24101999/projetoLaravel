@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Admincontroller;
+use App\Http\Controllers\Homecontroller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +15,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('page.home');
-});
+Route::get('/', [Homecontroller::class, 'index']);
+Route::get('/admin', [Admincontroller::class, 'index']);
