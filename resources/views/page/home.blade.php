@@ -13,20 +13,18 @@
 
 <h2 class="h2-title-responsive">Sites responsivos</h2>
 
+
+
 <article class="responsive">
-<div class="responsive-imgs">
-<img class="img-responsive" src="/imagens/header.jpg" alt="" >
-<img class="img-responsive" src="/imagens/header.jpg" alt="" >
-</div>
-<div class="responsive-imgs">
-<img class="img-responsive" src="/imagens/header.jpg" alt="" >
-<img class="img-responsive" src="/imagens/header.jpg" alt="" >
-</div>
+    @foreach ($items as $img)    
+    <div class="responsive-imgs">
+    <img class="img-responsive" src="/arquivos/{{$img->title}}" alt="" >
+    </div>
+    @endforeach
 </article>
 
 <article class="img-dinamic">
-    <img src="/imagens/header.jpg" alt="">
-    <h1>sites dinamicos</h1>
+  
 </article>
 
 <footer>
@@ -36,5 +34,12 @@
     <a href="https://github.com/24101999" target="_blank">GitHub</a>
     <a href="https://www.linkedin.com/in/henrique-da-silva-costa-7172521a2/" target="_blank">Linkedin</a>
 </footer>
+
+<script>
+    let item = '<?= json_encode($items) ?>'
+    let imgs = JSON.parse(item)
+</script>
+
+<script src="js/home.js"></script>
 
 

@@ -19,12 +19,12 @@ class Admincontroller extends Controller
             $extencao = pathinfo($_FILES['file']['name'], PATHINFO_EXTENSION);
 
             if (in_array($extencao, $formatos)) {
-                $pasta = "/public/arquivos/";
+                $pasta = "arquivos/";
                 $temporario = $_FILES['file']['tmp_name'];
                 $newName = uniqid() . ".$extencao";
-                $enviar = DB::insert('INSERT INTO imagens VALUES (? , ?)', [$newName, $title]);
+                $enviar = DB::table('imagens')->insert(['title' => $newName]);
                 if (move_uploaded_file($temporario, $pasta . $newName)) {
-                    $msg = 'upload feito com sucesso';
+                    return \redirect('/');
                     header('Location: ' . '/');
                     if ($msg) {
                         $link = '/';

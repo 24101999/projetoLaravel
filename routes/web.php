@@ -16,4 +16,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [Homecontroller::class, 'index']);
-Route::any('/add', [Admincontroller::class, 'index']);
+Route::get('/add', [Admincontroller::class, 'index']);
+Route::post('/add', [Admincontroller::class, 'index']);

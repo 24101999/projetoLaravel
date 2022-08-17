@@ -10,6 +10,6 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="js/home.js"></script>
+
 </body>
 </html>
