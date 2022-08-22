@@ -1,0 +1,31 @@
+.cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-image: url("/imagens/backend.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        input {
+            background: none;
+            border: 1px solid;
+            border-radius: 5px;
+            &::placeholder {
+                color: black;
+            }
+        }
+        button {
+            background: none;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.432);
+            transition: 0.4s all;
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.685);
+            }
+        }
+    }
+}
