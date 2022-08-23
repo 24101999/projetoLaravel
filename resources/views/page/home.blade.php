@@ -1,5 +1,7 @@
 @extends('page.layout')
 
+
+<a class="adm" href="/admin">admin</a>
 <header>
 <h1 class="h1-header">Henrique developer</h1>
 <h2 class="h2-blocks-header">tecnologias usadas nesse site</h2>

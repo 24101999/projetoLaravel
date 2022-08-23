@@ -1,5 +1,7 @@
 @extends('page.layout')
 
+
+
 <article class="login">
     <div class="form-login">
     <form action="" method="POST">

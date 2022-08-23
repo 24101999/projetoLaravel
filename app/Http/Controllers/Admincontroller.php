@@ -10,6 +10,8 @@ class Admincontroller extends Controller
     public function index()
     {
 
+
+
         $title = filter_input(INPUT_POST, 'title');
         $msg = '';
         $link = '';
@@ -29,14 +31,18 @@ class Admincontroller extends Controller
                     if ($msg) {
                         $link = '/';
                     }
-                } else {
-                    $msg = 'erro';
                 }
-            } else {
-                $msg = 'não existe';
             }
         }
 
         return \view('page.admin');
+    }
+
+    public function pegar()
+    {
+        $imagens = DB::table('imagens')->get();
+
+
+        return \view('page.admin', ['imagens' => $imagens]);
     }
 }
