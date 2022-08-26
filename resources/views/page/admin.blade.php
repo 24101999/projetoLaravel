@@ -1,5 +1,6 @@
 @extends('page.layout')
 <?php $imagens = DB::table('imagens')->get(); ?>
+<?php $items = DB::table('imagens')->get(); ?>
 
 <section class="admin-dad">
     <article class="admin">
@@ -7,7 +8,6 @@
             @csrf
             <input type="text" name="title">
             <input type="file" name="file">
-        
             <button type="submit" name="send">enviar</button>
         </form>
     </article>
@@ -20,8 +20,16 @@
                 <img src="arquivos/{{$img->title}}" alt="">
             </div>
             <div class="buttons">
-                <button>atualizar</button>
-                <button>excluir</button>
+                <form action="{{route('delete', $img->id)}}" method="POST">
+                    @csrf
+                    @method('DELETE')
+                        <button type="submit" name="delete">excluir</button>
+                    </form>
+                    <a href="add/{{$img->id}}">
+                        <form action="{{route('delete', $img->id)}}">
+                            <button type="submit">atualizar</button>
+                        </form>
+                    </a>
             </div>
         </article>
         @endforeach

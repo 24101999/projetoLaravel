@@ -75,6 +75,7 @@ header {
     gap: 1rem;
     position: relative;
     padding: 2rem 10rem;
+    flex-wrap: wrap;
 }
 
 .responsive-imgs {
@@ -88,7 +89,8 @@ header {
 
 .img-responsive {
     transition: all 0.4s;
-    max-width: 100%;
+    max-width: 300px;
+    max-height: 300px;
 }
 
 .img-responsive:hover {

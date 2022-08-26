@@ -9,8 +9,7 @@ class Homecontroller extends Controller
 {
     public function index()
     {
-
-        $items = DB::table('imagens')->get();
+        $items = DB::table('imagens')->where('id', '<', '5')->get();
 
         return view('page.home', ['items' => $items]);
     }
