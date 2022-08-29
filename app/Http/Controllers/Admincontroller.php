@@ -50,22 +50,36 @@ class Admincontroller extends Controller
     public function update($id)
     {
 
+
+
+        $imagens = DB::table('imagens')->get();
+
+        $dados = DB::table('imagens')->get();
+
         $title = filter_input(INPUT_POST, 'title');
+
 
         if (isset($_POST['send']) && $title) {
             $formatos = array('jpg', 'png', 'svg', 'gif');
             $extencao = pathinfo($_FILES['file']['name'], PATHINFO_EXTENSION);
-
             if (in_array($extencao, $formatos)) {
                 $pasta = "arquivos/";
                 $temporario = $_FILES['file']['tmp_name'];
                 $newName = uniqid() . ".$extencao";
-                $update = DB::table('imagens')->where('id', $id)->update(['title' => $newName]);
+                $update = DB::table('imagens')->where(['id', $id])->update(['title' => $newName]);
                 if (move_uploaded_file($temporario, $pasta . $newName)) {
-                    return \redirect('/');
+                    redirect('admin');
                 }
             }
+            redirect('admin');
         }
-        return view('page.admin', ['id' => $id]);
+        return view('page.update', ['id' => $id, 'imagens' => $imagens, 'dados' => $dados]);
+    }
+    public function edit($id)
+    {
+
+        $dados = DB::table('imagens')->get();
+
+        return \view('page.update', ['id' => $id, 'dados' => $dados]);
     }
 }

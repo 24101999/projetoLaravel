@@ -25,13 +25,10 @@
                     @method('DELETE')
                         <button type="submit" name="delete">excluir</button>
                     </form>
-                    <a href="add/{{$img->id}}">
-                        <form action="{{route('delete', $img->id)}}">
-                            <button type="submit">atualizar</button>
-                        </form>
-                    </a>
+                    <a href="{{route('edit',$img->id)}}">atualizar</a>
             </div>
         </article>
         @endforeach
     </section>
 </section>
+s
