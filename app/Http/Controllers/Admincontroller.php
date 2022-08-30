@@ -59,19 +59,18 @@ class Admincontroller extends Controller
         $title = filter_input(INPUT_POST, 'title');
 
 
-        if (isset($_POST['send']) && $title) {
+        if (isset($_POST['submit'])) {
             $formatos = array('jpg', 'png', 'svg', 'gif');
-            $extencao = pathinfo($_FILES['file']['name'], PATHINFO_EXTENSION);
+            $extencao = pathinfo($_FILES['arquivo']['name'], PATHINFO_EXTENSION);
             if (in_array($extencao, $formatos)) {
                 $pasta = "arquivos/";
-                $temporario = $_FILES['file']['tmp_name'];
+                $temporario = $_FILES['arquivo']['tmp_name'];
                 $newName = uniqid() . ".$extencao";
-                $update = DB::table('imagens')->where(['id', $id])->update(['title' => $newName]);
+                $update = DB::table('imagens')->where('id', $id)->update(['title' => $newName]);
                 if (move_uploaded_file($temporario, $pasta . $newName)) {
-                    redirect('admin');
+                    return redirect('admin');
                 }
             }
-            redirect('admin');
         }
         return view('page.update', ['id' => $id, 'imagens' => $imagens, 'dados' => $dados]);
     }

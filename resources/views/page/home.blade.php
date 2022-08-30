@@ -15,8 +15,6 @@
 
 <h2 class="h2-title-responsive">Sites responsivos</h2>
 
-
-
 <article class="responsive">
     @foreach ($items as $img)    
     <div class="responsive-imgs">
@@ -25,9 +23,13 @@
     @endforeach
 </article>
 
-<article class="img-dinamic">
-  
-</article>
+
+    <article class="img-dinamic">
+        <div class="arrows">
+            <img class="img-right" src="imagens/arrow-right-square.svg" alt="">
+            <img class="img-left" src="imagens/arrow-left-square.svg" alt="">
+        </div>
+    </article>
 
 <footer>
     <h2>Henrique da silva costa</h2>

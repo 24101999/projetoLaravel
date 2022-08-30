@@ -116,6 +116,26 @@ header {
     align-self: center;
 }
 
+.arrows {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px 0;
+}
+
+.img-right {
+    height: 30px;
+    cursor: pointer;
+    z-index: 2;
+    filter: invert(1);
+}
+
+.img-left {
+    height: 30px;
+    cursor: pointer;
+    z-index: 2;
+    filter: invert(1);
+}
+
 .img-dinamic h1 {
     text-align: center;
     align-self: center;

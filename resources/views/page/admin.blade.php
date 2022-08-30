@@ -25,7 +25,7 @@
                     @method('DELETE')
                         <button type="submit" name="delete">excluir</button>
                     </form>
-                    <a href="{{route('edit',$img->id)}}">atualizar</a>
+                    <a href="{{route('edit',$img->id)}}"><button type="button">atualizar</button></a>
             </div>
         </article>
         @endforeach
