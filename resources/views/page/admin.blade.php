@@ -31,4 +31,3 @@
         @endforeach
     </section>
 </section>
-s

@@ -120,6 +120,14 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 0px 20px 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+}
+
+.dad-response {
+    position: relative;
 }
 
 .img-right {
@@ -127,6 +135,7 @@ header {
     cursor: pointer;
     z-index: 2;
     filter: invert(1);
+    width: 10% !important;
 }
 
 .img-left {
@@ -134,6 +143,7 @@ header {
     cursor: pointer;
     z-index: 2;
     filter: invert(1);
+    width: 10% !important;
 }
 
 .img-dinamic h1 {

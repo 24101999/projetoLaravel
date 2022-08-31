@@ -22,14 +22,13 @@
     </div>
     @endforeach
 </article>
-
-
-    <article class="img-dinamic">
-        <div class="arrows">
-            <img class="img-right" src="imagens/arrow-right-square.svg" alt="">
-            <img class="img-left" src="imagens/arrow-left-square.svg" alt="">
-        </div>
-    </article>
+<section class="dad-response">
+    <div class="arrows">
+        <img class="img-left" src="imagens/arrow-left-square.svg" alt="">
+        <img class="img-right" src="imagens/arrow-right-square.svg" alt="">
+    </div>
+    <article class="img-dinamic"></article>
+</section>
 
 <footer>
     <h2>Henrique da silva costa</h2>
@@ -48,4 +47,3 @@
 
 
 
-ss

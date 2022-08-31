@@ -66,7 +66,7 @@ class Admincontroller extends Controller
                 $pasta = "arquivos/";
                 $temporario = $_FILES['arquivo']['tmp_name'];
                 $newName = uniqid() . ".$extencao";
-                $update = DB::table('imagens')->where('id', $id)->update(['title' => $newName]);
+                $update = DB::table('imagens')->where(['id' => $id])->update(['title' => $newName]);
                 if (move_uploaded_file($temporario, $pasta . $newName)) {
                     return redirect('admin');
                 }
