@@ -34,6 +34,35 @@
   color: black;
 }
 
+.form-login form input.active {
+  -webkit-animation: ativo 0.2s;
+          animation: ativo 0.2s;
+}
+
+@-webkit-keyframes ativo {
+  0% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes ativo {
+  0% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
 .form-login form button {
   border: 1px solid;
   border-radius: 5px;

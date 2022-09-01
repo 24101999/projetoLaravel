@@ -13,8 +13,10 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js')
 mix.js('resources/js/home.js', 'public/js')
+mix.js('resources/js/login.js', 'public/js')
     .postCss('resources/css/app.css', 'public/css')
     .css('resources/css/home.css', 'public/css')
     .css('resources/css/admin.css', 'public/css')
     .css('resources/css/login.css', 'public/css')
     .css('resources/css/cadastro.css', 'public/css')
+    .css('resources/css/update.css', 'public/css')

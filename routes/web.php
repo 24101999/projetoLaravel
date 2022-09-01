@@ -22,7 +22,7 @@ Route::get('/add', [Admincontroller::class, 'pegar']);
 Route::post('/add', [Admincontroller::class, 'index']);
 Route::any('/add/{id?}', [Admincontroller::class, 'delete'])->name('delete');
 Route::any('/update/{id?}', [Admincontroller::class, 'update'])->name('update');
-Route::any('/edit/{id?}', [Admincontroller::class, 'edit'])->name('edit');
+Route::any('/edit/{id?}', [Admincontroller::class, 'edit'])->name('ed');
 Route::put('/update/{id?}', [Admincontroller::class, 'update'])->name('up');
 Route::any('/admin', [LoginController::class, 'index']);
 Route::any('/cadastro', [CadastroController::class, 'index']);

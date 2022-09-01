@@ -23,6 +23,20 @@
             &::placeholder {
                 color: black;
             }
+            &.active {
+                animation: ativo 0.2s;
+            }
+        }
+        @keyframes ativo {
+            0% {
+                transform: translateX(10px);
+            }
+            50% {
+                transform: translateX(-10px);
+            }
+            100% {
+                transform: translateX(0px);
+            }
         }
         button {
             border: 1px solid;

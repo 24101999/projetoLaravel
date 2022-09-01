@@ -1,0 +1,30 @@
+.body {
+    height: 100%;
+    background-image: url("/imagens/backend.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.update {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+    overflow-y: scroll;
+    padding: 1rem;
+    img {
+        max-height: 300px;
+        max-width: 200px;
+    }
+    form {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    button {
+        background: none;
+        border-radius: 5px;
+    }
+}

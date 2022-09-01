@@ -19409,6 +19409,19 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
 /***/ }),
 
+/***/ "./resources/css/update.css":
+/*!**********************************!*\
+  !*** ./resources/css/update.css ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./resources/css/app.css":
 /*!*******************************!*\
   !*** ./resources/css/app.css ***!
@@ -19783,7 +19796,8 @@ process.umask = function() { return 0; };
 /******/ 			"css/login": 0,
 /******/ 			"css/admin": 0,
 /******/ 			"css/home": 0,
-/******/ 			"css/app": 0
+/******/ 			"css/app": 0,
+/******/ 			"css/update": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -19833,12 +19847,13 @@ process.umask = function() { return 0; };
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/cadastro","css/login","css/admin","css/home","css/app"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/cadastro","css/login","css/admin","css/home","css/app"], () => (__webpack_require__("./resources/css/app.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/cadastro","css/login","css/admin","css/home","css/app"], () => (__webpack_require__("./resources/css/home.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/cadastro","css/login","css/admin","css/home","css/app"], () => (__webpack_require__("./resources/css/admin.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/cadastro","css/login","css/admin","css/home","css/app"], () => (__webpack_require__("./resources/css/login.css")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/cadastro","css/login","css/admin","css/home","css/app"], () => (__webpack_require__("./resources/css/cadastro.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/cadastro","css/login","css/admin","css/home","css/app","css/update"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/cadastro","css/login","css/admin","css/home","css/app","css/update"], () => (__webpack_require__("./resources/css/app.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/cadastro","css/login","css/admin","css/home","css/app","css/update"], () => (__webpack_require__("./resources/css/home.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/cadastro","css/login","css/admin","css/home","css/app","css/update"], () => (__webpack_require__("./resources/css/admin.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/cadastro","css/login","css/admin","css/home","css/app","css/update"], () => (__webpack_require__("./resources/css/login.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/cadastro","css/login","css/admin","css/home","css/app","css/update"], () => (__webpack_require__("./resources/css/cadastro.css")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/cadastro","css/login","css/admin","css/home","css/app","css/update"], () => (__webpack_require__("./resources/css/update.css")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

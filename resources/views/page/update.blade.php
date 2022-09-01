@@ -1,10 +1,15 @@
-@extends("page.layout")
+@extends('page.layout')
 
-{{-- @dd($id) --}}
-
-<form action="{{route('up' , $dados[0]->id)}}" method="POST" enctype="multipart/form-data">
-    @csrf
-    @method('put')
-    <input type="file" name="arquivo" value="{{$dados[0]->title}}">
-    <button type="submit" name="submit">update</button>
-</form>
+<section class="body">
+    <article class="update" >
+@foreach($dados as $dado)
+        <form action="{{route('up' , $dado->id)}}" method="POST" enctype="multipart/form-data">
+            @csrf
+            @method('put')
+            <img src="/arquivos/{{$dado->title}}" alt="">
+            <input type="file" name="arquivo">
+            <button type="submit" name="submit">update</button>
+        </form>
+        @endforeach
+    </article>
+</section>    
