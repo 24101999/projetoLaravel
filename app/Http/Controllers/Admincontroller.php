@@ -41,7 +41,7 @@ class Admincontroller extends Controller
     {
 
         $deletar = DB::table('imagens')->where('id', $id)->delete();
-        return \redirect('/');
+        return \redirect('/admin');
 
 
         return view('page.admin', ['id' => $id, 'deletar' => $deletar]);
@@ -77,7 +77,7 @@ class Admincontroller extends Controller
     public function edit($id)
     {
 
-        $dados = DB::table('imagens')->get();
+        $dados = DB::table('imagens')->where('id', $id)->get();
 
         return \view('page.update', ['id' => $id, 'dados' => $dados]);
     }
